@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mapper.Userinfomapper">
+  <select id="QueryInfo" useCache="true" resultType="com.pojo.Userinfo" >
+  select cardno,name from userinfo
+  </select>
+  
+  
+ <!--  <delete id="DeletePRP" parameterType="com.pojo.PRPData">
+  update PRP set PRP_STATE=0 where PRP_ID=#{prp_id}
+  </delete>
+  <update id="UpdatePRP" parameterType="com.pojo.PRPData">
+  update PRP set PRP_SHORT=#{prp_short},PRP_NAME=#{prp_name} where PRP_ID=#{prp_id}
+  </update>
+  <select id="SelectNameStateByID" parameterType="com.pojo.PRPData" resultType="com.pojo.PRPData">
+  select PRP_NAME from PRP where PRP_NAME=#{prp_name} and PRP_STATE=1
+  </select>--> 
+</mapper>
